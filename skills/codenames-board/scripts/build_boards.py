@@ -156,6 +156,7 @@ def main(argv=None):
                     help="rotate the key grid clockwise so it matches the board's orientation")
     ap.add_argument("--allow-nonstandard", action="store_true",
                     help="accept key counts other than 9/8/7/1")
+    ap.add_argument("--game-id", help="reuse the id printed by an earlier build so phones keep their marks after a rebuild")
     args = ap.parse_args(argv)
 
     try:
@@ -174,7 +175,7 @@ def main(argv=None):
 
     c = Counter(roles)
     totals = {"red": c["red"], "blue": c["blue"]}
-    game_id = secrets.token_hex(5)
+    game_id = args.game_id or secrets.token_hex(5)
     template = TEMPLATE.read_text(encoding="utf-8")
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -196,6 +197,7 @@ def main(argv=None):
     print(preview(words, roles))
     print(f"wrote {out / 'public.html'}")
     print(f"wrote {out / 'spymaster.html'}")
+    print(f"game id {game_id} (pass --game-id {game_id} to rebuild without clearing marks)")
     return 0
 
 

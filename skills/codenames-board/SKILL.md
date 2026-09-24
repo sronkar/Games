@@ -62,6 +62,8 @@ python3 scripts/build_boards.py game.json --out <dir>             # full HTML fi
 python3 scripts/build_boards.py game.json --out <dir> --artifact  # for claude.ai Artifacts
 ```
 
+To fix a misread word or color after the boards are shared, rebuild with `--game-id <id>` using the id the first build printed, and republish to the same links. Phones then keep the marks already made.
+
 The script prints the board as a text grid with each word's letter (`AGENT [R]`). Check it against both photos. If the user is the spymaster or game host, you can show them the word list to confirm before they share anything.
 
 ### 5. Deliver
