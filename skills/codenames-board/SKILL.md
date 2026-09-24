@@ -71,6 +71,11 @@ The script prints the board as a text grid with each word's letter (`AGENT [R]`)
 - **If you can publish Artifacts** (claude.ai, Claude Code with the Artifact tool): build with `--artifact` and publish the two files as **separate** artifacts: `public.html` titled "Codenames Field Board" and `spymaster.html` titled "Codenames Spymaster Key". Give the user both links and say clearly which one to send to everyone and which one goes only to the two spymasters.
 - **Otherwise**: build without `--artifact` and hand over the two `.html` files. Each is a single self-contained file that opens in any phone browser, can be sent over a messaging app or AirDrop, and needs no internet apart from the optional web fonts.
 
+When only the host has Claude, tell them how the others get in:
+- **Easiest:** open each artifact's **Share** menu and turn on a public link. Anyone with the link can open it in a phone browser, with no Claude account needed. Send the players' link to the group and the spymasters' link privately to the two spymasters.
+- **No links:** also build without `--artifact` and send the two `.html` files. Android opens them in Chrome. On iPhone, the preview inside a chat app often doesn't run the page, so save the file to Files and open it from there in Safari.
+- Each phone keeps its own marks, and the boards don't sync between phones. Pick one person to mark the players' board and show it to the table or share their screen on the call. Each spymaster flips cards on their own copy.
+
 Tell the user in one line how to play with them:
 - Players' board: after each guess, tap the word and pick the color the spymaster calls.
 - Spymasters' board: tap the word that was just guessed to flip it face down.
