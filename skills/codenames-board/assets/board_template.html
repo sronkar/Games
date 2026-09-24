@@ -1,7 +1,7 @@
 <title>__TITLE__</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Heebo:wght@600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
   /* One deliberate look: a card table. Single theme, every color set explicitly. */
   :root {
@@ -23,7 +23,7 @@
     --assassin: #0d0d0f;
     --assassin-on: #e8534a;
     --focus: #f2c14e;
-    --word: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
+    --word: "Barlow Condensed", "Heebo", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
     --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   }
   [hidden] { display: none !important; }
@@ -286,7 +286,7 @@
     b.setAttribute("role", "gridcell");
     var inner = document.createElement("span"); inner.className = "inner";
     var front = document.createElement("span"); front.className = "face front";
-    var word = document.createElement("span"); word.className = "word"; word.textContent = w;
+    var word = document.createElement("span"); word.className = "word"; word.textContent = w; word.dir = "auto";
     front.appendChild(word); inner.appendChild(front);
     if (MODE === "spymaster") {
       b.dataset.role = DATA.key[i];

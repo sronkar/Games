@@ -31,7 +31,8 @@ If only one arrives, ask for the other. Tell the user once that the key card pho
 - Read the grid row by row, top-left to bottom-right, as the board appears in the photo.
 - Each Codenames card prints its word twice, once upside-down. Read the copy that is upright in the photo.
 - If a word is blurred, covered by glare or cut off, ask the user. Do not guess, because a wrong word breaks the game.
-- Keep multi-word cards as they are printed (for example `ICE CREAM`, `LOCH NESS`).
+- Keep multi-word cards as they are printed (for example `ICE CREAM`, `LOCH NESS`, `בית-ספר`).
+- Any language works. For right-to-left editions (Hebrew, Arabic), still list each row **left to right as the cards lie in the photo**, because the key card maps physical positions and not reading order. The pages keep that layout and show each word in its own direction.
 
 ### 3. Read the key card
 
