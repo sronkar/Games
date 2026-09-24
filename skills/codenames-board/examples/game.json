@@ -1,0 +1,17 @@
+{
+  "words": [
+    "AGENT", "BERLIN", "CASINO", "DIAMOND", "EAGLE",
+    "FALL", "GLOVE", "HOOK", "ICE CREAM", "JUPITER",
+    "KETCHUP", "LASER", "MOSCOW", "NINJA", "OCTOPUS",
+    "PIANO", "QUEEN", "ROBOT", "SATURN", "TORCH",
+    "UNICORN", "VAN", "WHALE", "YARD", "HELICOPTER"
+  ],
+  "key": [
+    "RBNRB",
+    "NRABR",
+    "NBRNB",
+    "RNBRN",
+    "BRNBR"
+  ],
+  "starting_team": "red"
+}
